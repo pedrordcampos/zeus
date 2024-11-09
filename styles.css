@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo para o container do conteúdo */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para as datas de nascimento e falecimento */
+h2 {
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos dos parágrafos */
+p {
+    line-height: 1.8;
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #555;
+    text-align: justify;
+}
+
+/* Estilo específico para a sigla NEOQEAV */
+.neoqeav {
+    font-weight: bold;
+    color: red;
+}
+
+/* Efeito de transição ao passar o mouse */
+p:hover {
+    color: #333;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    background-color: #e1bee7;
+}
+
+/* Fundo do texto */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #e0f7fa, #e1bee7);
+    z-index: -1;
+    border-radius: 12px;
+    opacity: 0.3;
+}
